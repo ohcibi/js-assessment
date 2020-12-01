@@ -16,7 +16,8 @@ browserSync.init({
   notify: false,
   ui: false,
   ghostMode: false,
-  logLevel: 'silent'
+  logLevel: 'silent',
+  cors: true,
 });
 
 f = fs.readFileSync(__dirname + '/help.txt', 'utf8');
