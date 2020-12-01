@@ -2,6 +2,7 @@
 if (typeof window === 'undefined') {
   require('../../app/async');
   var { expect } = require('chai');
+  global.fetch = require('node-fetch');
 }
 
 describe('async behavior', () => {
@@ -31,12 +32,13 @@ describe('async behavior', () => {
   });
 
   it('you should be able to retrieve data from the server and return a sorted array of names', (done) => {
-    const url = '/data/testdata.json';
+    const url = 'http://localhost:8080/data/testdata.json';
 
     asyncAnswers.manipulateRemoteData(url).then((result) => {
       expect(result).to.have.length(5);
       expect(result.join(' ')).to.eql('Adam Alex Matt Paul Rebecca');
       done();
-    });
+    })
+      .catch((error) => done(error));
   });
 });
