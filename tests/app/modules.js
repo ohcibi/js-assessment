@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 if (typeof window === 'undefined') {
   require('../../app/modules');
-  const { expect } = require('chai');
+  var { expect } = require('chai');
 }
 
 describe('the module pattern', () => {
