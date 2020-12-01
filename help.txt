@@ -6,3 +6,7 @@ reload when you save the files.
 
 For some tests, the instructions will be more involved; in those cases, the
 inline comments should give you the details you need.
+
+Some tests have wrong assertions. You have to fix them accordingly.
+You have to find out for yourself which tests are affected by this. The use
+of a debugger is recommended.
