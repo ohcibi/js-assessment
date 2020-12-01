@@ -5,9 +5,13 @@ if (typeof window === 'undefined') {
 }
 
 describe('best practices', () => {
-  it('you should avoid global variables', () => {
+  it('you should avoid global variables', (done) => {
     bestPracticesAnswers.globals();
-    expect(window.myObject).not.to.be.ok;
+    try {
+      expect(myObject).not.to.be.ok;
+    } catch (error) {
+      done();
+    }
   });
 
   it('you should use parseInt correctly', () => {
