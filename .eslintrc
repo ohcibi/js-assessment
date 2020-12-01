@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "root": true,
+  "rules": {
+    "no-underscore-dangle": 0,
+    "no-console": 0,
+    "max-len": [2, 200, 2]
+  }
+}

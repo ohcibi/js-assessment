@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "no-unused-expressions": 0,
+    "block-scoped-var": 0,
+    "no-undef": 0,
+    "global-require": 0,
+    "vars-on-top": 0,
+    "no-var": 0,
+    "no-unused-vars": 0
+  }
+}
