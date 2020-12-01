@@ -2,7 +2,7 @@
   "author": "INFOnline GmbH",
   "name": "js-assessment",
   "description": "A test-driven assessment of JavaScript skills",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://www.infonline.de",
   "repository": {
     "type": "git",
